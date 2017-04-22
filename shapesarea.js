@@ -1,47 +1,10 @@
 "use strict"
 
-class Shape {
-	constructor(options) {
-		this.options_ = options;
-	}
-}
 
-
-class Triangle extends Shape {
-  constructor(options) {
-		super(options);
-	}
-
-	getArea() {
-    let area = .5 * this.options_.width * this.options_.height;
-    return area;
-	}
-}
-
-class Square extends Shape {
-	constructor(options) {
-		super(options);
-	}
-
-	getArea() {
-    let area = Math.pow(this.options_.width, 2);
-		return area;
-	}
-}
-
-
-class Rectangle extends Shape {
-	constructor(options) {
-		super(options);
-	}
-
-	getArea() {
-    let area = this.options_.width * this.options_.height;
-    return area;
-	}
-}
-
-
+var Shape = require('./shapes.js').Shape;
+var Triangle = require('./shapes.js').Triangle;
+var Square = require('./shapes.js').Square;
+var Rectangle = require('./shapes.js').Rectangle;
 
 var figura = {Triangle: 'Triangle',
             Square: 'Square',
