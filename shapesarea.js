@@ -2,9 +2,9 @@
 
 
 var Shape = require('./shapes.js').Shape;
-var Triangle = require('./shapes.js').Triangle;
-var Square = require('./shapes.js').Square;
-var Rectangle = require('./shapes.js').Rectangle;
+var Triangle = require('./triangle.js').Triangle;
+var Square = require('./square.js').Square;
+var Rectangle = require('./rectangle.js').Rectangle;
 
 var figura = {Triangle: 'Triangle',
             Square: 'Square',
